@@ -22,6 +22,7 @@ body {
   width: 21cm;
   font-family: Myriad Pro, sans-serif;
   color: #222;
+  background-color: white;
 }
 
 header {
@@ -32,7 +33,7 @@ header {
 .backgroundContainer {
   background-color: #c8c9cb;
   flex: 1;
-  height: 79px;
+  height: 84px;
 }
 
 .column {
@@ -50,7 +51,7 @@ section[name="classAndDomain"] {
   padding: 16px;
   padding-top: 6px;
   clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-  height: 87px;
+  height: 94px;
 }
 
 section[name="classAndDomain"],
@@ -60,6 +61,7 @@ section[name="characterInfo"] {
 
 section[name="characterLevel"] {
   flex: 0.5;
+  position: relative;
 }
 
 section[name="characterInfo"] > div:nth-child(2) {
@@ -70,7 +72,7 @@ section[name="characterInfo"] > div:nth-child(2) {
 
 section[name="characterInfo"] {
   margin-left: 6px;
-  padding-top: 3px;
+  padding-top: 6px;
 }
 
 .class,
@@ -123,7 +125,17 @@ input {
   width: 170px;
 }
 
-#characterLevel img {
+#characterLevel {
+  font-size: 36px;
+  font-weight: 600;
+  position: absolute;
+  top: 27px;
+  left: 35px;
+  z-index: 1;
+}
+
+section[name="characterLevel"] img {
   position: relative;
   top: 4px;
+  width: 80%;
 }
