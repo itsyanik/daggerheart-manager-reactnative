@@ -17,6 +17,7 @@ body {
 
 html,
 body {
+  /* A4 size */
   height: 29.7cm;
   width: 21cm;
   font-family: Myriad Pro, sans-serif;
@@ -24,8 +25,14 @@ body {
 }
 
 header {
-  background-color: #c8c9cb;
+  display: flex;
   align-items: center;
+}
+
+.backgroundContainer {
+  background-color: #c8c9cb;
+  flex: 1;
+  height: 79px;
 }
 
 .column {
@@ -41,7 +48,9 @@ header {
 section[name="classAndDomain"] {
   background-color: #404041;
   padding: 16px;
+  padding-top: 6px;
   clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  height: 87px;
 }
 
 section[name="classAndDomain"],
@@ -59,6 +68,11 @@ section[name="characterInfo"] > div:nth-child(2) {
   left: -18px;
 }
 
+section[name="characterInfo"] {
+  margin-left: 6px;
+  padding-top: 3px;
+}
+
 .class,
 .domain {
   color: white;
@@ -67,24 +81,25 @@ section[name="characterInfo"] > div:nth-child(2) {
 
 .class {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 29px;
 }
 
 .domain {
-  font-size: 19px;
+  font-size: 16px;
 }
 
 input {
   border: 0;
   background: transparent;
   outline: none;
+  font-size: 12px;
 }
 
 .inputContainer {
   border-radius: 6px;
   border: 1px solid #8e8e90;
   background-color: #fff;
-  height: 35px;
+  height: 34px;
   padding-top: 3px;
   padding-left: 6px;
 }
@@ -100,11 +115,15 @@ input {
   width: 205px;
 }
 
-#characterName,
-#characterHeritage {
-  margin-right: 6px;
-}
-
 #characterSubclass {
   width: 188px;
+}
+
+#characterPronouns {
+  width: 170px;
+}
+
+#characterLevel img {
+  position: relative;
+  top: 4px;
 }
