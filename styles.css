@@ -4,18 +4,107 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   background: #f9f9f9;
   margin: auto;
 }
+
 body {
+  /* TODO: remove */
   border: 1px solid;
-  padding: 12px;
 }
+
 html,
 body {
   height: 29.7cm;
   width: 21cm;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Myriad Pro, sans-serif;
   color: #222;
+}
+
+header {
+  background-color: #c8c9cb;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+section[name="classAndDomain"] {
+  background-color: #404041;
+  padding: 16px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+section[name="classAndDomain"],
+section[name="characterInfo"] {
+  flex: 1;
+}
+
+section[name="characterLevel"] {
+  flex: 0.5;
+}
+
+section[name="characterInfo"] > div:nth-child(2) {
+  margin-top: 4px;
+  position: relative;
+  left: -18px;
+}
+
+.class,
+.domain {
+  color: white;
+  text-transform: uppercase;
+}
+
+.class {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.domain {
+  font-size: 19px;
+}
+
+input {
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+
+.inputContainer {
+  border-radius: 6px;
+  border: 1px solid #8e8e90;
+  background-color: #fff;
+  height: 35px;
+  padding-top: 3px;
+  padding-left: 6px;
+}
+
+.inputContainer span {
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.row > .inputContainer:nth-child(1) {
+  margin-right: 4px;
+  width: 205px;
+}
+
+#characterName,
+#characterHeritage {
+  margin-right: 6px;
+}
+
+#characterSubclass {
+  width: 188px;
 }
