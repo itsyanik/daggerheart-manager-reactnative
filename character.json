@@ -1,0 +1,78 @@
+{
+  "name": "",
+  "level": "",
+  "pronouns": "",
+  "heritage": "",
+  "class": "",
+  "subclass": "",
+  "domain": "",
+  "hope": "",
+  "classFeature": "",
+  "stats": {
+    "evasion": "",
+    "armor": "",
+    "agility": "",
+    "strength": "",
+    "finesse": "",
+    "instinct": "",
+    "presence": "",
+    "knowledge": ""
+  },
+  "damageAndHealth": {
+    "minorDamage": "",
+    "majorDamage": "",
+    "severeDamage": "",
+    "stress": "",
+    "hp": ""
+  },
+  "experiences": [
+    {
+      "description": "",
+      "modifier": "+2"
+    }
+  ],
+  "gold": {
+    "handful": "",
+    "bags": "",
+    "chest": ""
+  },
+  "activeWeapons": {
+    "primary": {
+      "onehanded": "",
+      "name": "",
+      "traitAndRange": "",
+      "damageDiceAndType": "",
+      "feature": ""
+    },
+    "secondary": {
+      "onehanded": "",
+      "name": "",
+      "traitAndRange": "",
+      "damageDiceAndType": "",
+      "feature": ""
+    }
+  },
+  "activeArmor": {
+    "name": "",
+    "baseThresholds": "",
+    "baseScore": "",
+    "feature": ""
+  },
+  "inventory": [],
+  "inventoryWeapons": [
+    {
+      "onehanded": "",
+      "name": "",
+      "traitAndRange": "",
+      "damageDiceAndType": "",
+      "feature": ""
+    },
+    {
+      "onehanded": "",
+      "name": "",
+      "traitAndRange": "",
+      "damageDiceAndType": "",
+      "feature": ""
+    }
+  ]
+}
