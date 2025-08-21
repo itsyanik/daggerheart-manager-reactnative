@@ -1,78 +1,136 @@
 {
-  "name": "",
-  "level": "",
-  "pronouns": "",
-  "heritage": "",
-  "class": "",
-  "subclass": "",
-  "domain": "",
-  "hope": "",
-  "classFeature": "",
+  "name": "Luminiel",
+  "level": 1,
+  "pronouns": "He/Him",
+  "class": "Wizard",
+  "subclass": "School of Knowledge",
+  "domain": "Codex & Splendor",
+  "heritage": "Wildborne Galapa",
+  "hope": 3,
+  "hopeFeature": {
+    "name": "Not this time",
+    "description": "Spend 3 hope to force an adversary within Far range to reroll an attack or damage roll."
+  },
+  "classFeature": [
+    {
+      "name": "PRESTIDIGITATION",
+      "description": "You can perform harmless, subtle magical effects at will. For example, you can change an object’s color, create a smell, light a candle, cause a tiny object to float, illuminate a room, or repair a small object."
+    },
+    {
+      "name": "STRANGE PATTERNS",
+      "description": "Choose a number between 1 and 12. When  you roll that number on a Duality Die, gain a Hope or clear a Stress. You can change this number when you take a long rest."
+    }
+  ],
+  "subclassFeature": {
+    "foundationFeatures": [
+      {
+        "name": "PREPARED",
+        "description": "Take an additional domain card of your level or lower from a domain you have access to."
+      },
+      {
+        "name": "ADEPT",
+        "description": "When you Utilize an Experience, you can mark a Stress instead of spending a Hope. If you do, double your Experience modifier for that roll."
+      }
+    ],
+    "specializtionFeatures": [
+      {
+        "name": "ACCOMPLISHED",
+        "description": "Take an additional domain card of your level or lower from a domain you have access to."
+      },
+      {
+        "name": "PERFECT RECALL",
+        "description": "Once per rest, when you recall a domain card in your vault, you can reduce its Recall Cost by 1."
+      }
+    ],
+    "masteryFeatures": [
+      {
+        "name": "BRILLIANT",
+        "description": "Take an additional domain card of your level or lower from a domain you have access to."
+      },
+      {
+        "name": "HONED EXPERTISE",
+        "description": "When you use an Experience, roll a d6. On a result of 5 or higher, you can use it without spending Hope."
+      }
+    ]
+  },
+  "ancestryFeatures": [
+    {
+      "name": "SHELL",
+      "description": "Gain a bonus to your damage thresholds equal to your Proficiency."
+    },
+    {
+      "name": "RETRACT",
+      "description": "Mark a Stress to retract into your shell. While in your shell, you have resistance to physical damage, you have disadvantage on action rolls, and you can’t move."
+    }
+  ],
   "stats": {
-    "evasion": "",
-    "armor": "",
-    "agility": "",
-    "strength": "",
-    "finesse": "",
-    "instinct": "",
-    "presence": "",
-    "knowledge": ""
+    "evasion": 12,
+    "armor": 3,
+    "agility": 0,
+    "strength": -1,
+    "finesse": 1,
+    "instinct": 0,
+    "presence": 1,
+    "knowledge": 2
   },
   "damageAndHealth": {
-    "minorDamage": "",
-    "majorDamage": "",
-    "severeDamage": "",
-    "stress": "",
-    "hp": ""
+    "minorDamage": 5,
+    "majorDamage": 11,
+    "hp": 5,
+    "stress": 0
   },
   "experiences": [
     {
-      "description": "",
+      "description": "Exchange Student",
+      "modifier": "+2"
+    },
+    {
+      "description": "Translator",
       "modifier": "+2"
     }
   ],
   "gold": {
-    "handful": "",
-    "bags": "",
-    "chest": ""
+    "handful": 1,
+    "bags": 0,
+    "chest": 0
   },
   "activeWeapons": {
     "primary": {
-      "onehanded": "",
-      "name": "",
-      "traitAndRange": "",
-      "damageDiceAndType": "",
-      "feature": ""
+      "onehanded": true,
+      "name": "WAND",
+      "trait": "Knowledge",
+      "range": "Far",
+      "damageDice": "d6+1",
+      "damageType": "Magic",
+      "feature": null
     },
     "secondary": {
-      "onehanded": "",
-      "name": "",
-      "traitAndRange": "",
-      "damageDiceAndType": "",
-      "feature": ""
+      "onehanded": true,
+      "name": "SMALL DAGGER",
+      "trait": "Finesse",
+      "range": "Melee",
+      "damageDice": "d8",
+      "damageType": "Physical",
+      "feature": {
+        "name": "PAIRED",
+        "description": "+2 to primary weapon damage to targets within Melee range."
+      }
     }
   },
   "activeArmor": {
-    "name": "",
-    "baseThresholds": "",
-    "baseScore": "",
-    "feature": ""
-  },
-  "inventory": [],
-  "inventoryWeapons": [
-    {
-      "onehanded": "",
-      "name": "",
-      "traitAndRange": "",
-      "damageDiceAndType": "",
-      "feature": ""
-    },
-    {
-      "onehanded": "",
-      "name": "",
-      "traitAndRange": "",
-      "damageDiceAndType": "",
-      "feature": ""
+    "name": "Gambeson Armor",
+    "baseThresholds": "5/11",
+    "baseScore": 3,
+    "feature": {
+      "name": "FLEXIBLE",
+      "description": "+1 to Evasion."
     }
-  ]
+  },
+  "inventory": [
+    "Torch",
+    "50ft Rope",
+    "Basic Supplies (tent, bedroll, tinderbox, rations, etc.)",
+    "Minor Health Potion (clear 1d4 HP)"
+  ],
+  "inventoryWeapons": []
 }
